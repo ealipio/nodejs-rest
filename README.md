@@ -12,4 +12,8 @@ We are using mongoDB in mlab, to run this application follow the next steps:
 * install dependencies (`npm install`)
 * run `server.js` with `npm start`
 
+
+atm the application is deployed in heroku, you can tested here:
+https://nodejs-restful-api-2020.herokuapp.com/users
+
 that's it.
