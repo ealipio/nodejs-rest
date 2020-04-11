@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
+const morgan = require('morgan');
 
 const Dogs = require('./models/dogs');
 const Users = require('./models/users');
@@ -16,29 +17,39 @@ require('./config/database')(app, mongoose);
 // app.use(express.json());
 // app.use(express.urlencoded());
 
+const getRandom = () => parseInt(Math.random()*100);
 // Import routes
 //let apiRoutes = require("./routes")
 
-app.get('/', function (req, res) {
-  //User.find({}).then(d => res.json(d))
+// Use Api routes in the App
+//app.use('/api', apiRoutes);
+//app.use(morgan(​'dev'​));
+app.use(morgan('dev'))
 
+
+app.get('/', function (req, res) {
+  
   const newDog = new Dogs({
-    name: 'John',
+    name: `Marianne${getRandom()}`,
     picture: '',
     age: 11,
     country: 'Colombia',
   });
   newDog
     .save()
-    .then((dog) => res.send('new dog saved'))
+    .then((dog) => res.status(200).send('new dog saved'))
     .catch((e) => res.send(e));
+});
+
+app.get('/list-dogs', function (req, res) {
+  Dogs.find({}).then(d => res.status(200).json(d))
+  //User.find({}).then(d => res.json(d))
 });
 
 app.get('/users', function (req, res) {
   Users.find({}).then(d => res.json(d))
 });
-// Use Api routes in the App
-//app.use('/api', apiRoutes);
+
 
 app.listen(process.env.PORT, function () {
   console.log(`listening on port ${process.env.PORT}!`);
