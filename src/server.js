@@ -50,8 +50,8 @@ app.use(morgan('dev'))
 // });
 
 
-app.listen(process.env.PORT, function () {
-  console.log(`listening on port ${process.env.PORT}!`);
+app.listen(process.env.PORT || 8080, function () {
+  console.log(`listening on port ${process.env.PORT || 8080}!`);
 });
 
 // https://github.com/hengkiardo/express4-bootstrap-starter
