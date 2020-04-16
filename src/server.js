@@ -15,7 +15,8 @@ app.config = process.env;
 require('./config/database')(app, mongoose);
 
 //Use Api routes in the App
-app.use('/api', routes); //http://localhost:8080/api
+//http://localhost:8080/api
+app.use('/api', routes);
 app.use(morgan('dev'))
 // from express 4.16+ body-parser is built in
 // app.use(express.json());
@@ -54,3 +55,4 @@ app.listen(process.env.PORT, function () {
 });
 
 // https://github.com/hengkiardo/express4-bootstrap-starter
+//https://github.com/rafaelgou/mongoose-restfull-crud

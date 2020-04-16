@@ -8,18 +8,26 @@ const usersSchema = new mongoose.Schema({
     trim: true,
     minlength: 5,
   },
-  password: {
+  name: {
+    type: String,
+    required: true,
+  },
+  username: {
+    type: String,
+    required: true,
+  },
+  address: {
+    type: Map,
+    required: true,
+  },
+  phone: {
+    type: String,
+    required: true,
+  },
+  website: {
     type: String,
     required: true,
   },
 });
-
-
-// const myUser = new User({ email: 'myUser@eisson.pe', password: 'I<3Cats!' });
-
-// myUser
-//   .save()
-//   .then((myUser) => console.log('its all good'))
-//   .catch((err) => console.log(err));
 
 module.exports = mongoose.model('Users', usersSchema);

@@ -1,10 +1,10 @@
-const data = require('../data.json');
+//@todo: delete this file 
+const data = require('./data.json');
 
 module.exports = (type) => {
   return (req, res, next, value) => {
     const typePlural = `${type}s`;
     const obj = data[typePlural].find((t) => t.id === value * 1);
-
     if (obj) {
       req[type] = obj;
       next();
