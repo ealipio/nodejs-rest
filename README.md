@@ -37,5 +37,6 @@ $ heroku maintenance:on -a passport-login-eisson
 * https://medium.com/@lavitr01051977/node-express-js-aea19636a500
 * https://medium.com/@paigen11/sequelize-the-orm-for-sql-databases-with-nodejs-daa7c6d5aca3
 * https://scotch.io/@deityhub/getting-started-with-the-mern-stack
+* https://zeit.co/guides/deploying-a-mongodb-powered-api-with-node-and-now
 
-that's it.
+that's it :)

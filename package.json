@@ -5,20 +5,21 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "build": "node src/server.js",
     "start-watch": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "1.18.4"
+    "nodemon": "^1.18.4"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
   },
   "engines": {
     "node": "10.13.0"
