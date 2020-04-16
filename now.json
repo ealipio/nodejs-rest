@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "env": {
+    "MONGO_LAB_URI": "@MONGO_LAB_URI"
+  },
   "routes": [
     {
       "src": "/api/users",

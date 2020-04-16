@@ -5,6 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
+    "build": "node src/server.js",
     "start-watch": "nodemon src/server.js"
   },
   "keywords": [],

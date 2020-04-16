@@ -32,4 +32,10 @@ $ heroku maintenance:on -a passport-login-eisson
 * https://nodejs-restful-api-2020.herokuapp.com/api/photos
 * https://nodejs-restful-api-2020.herokuapp.com/api/users
 
+> Useful links"
+* https://www.codementor.io/@theoutlander/introduction-to-mongoose-for-mongodb-gw9xw34el
+* https://medium.com/@lavitr01051977/node-express-js-aea19636a500
+* https://medium.com/@paigen11/sequelize-the-orm-for-sql-databases-with-nodejs-daa7c6d5aca3
+* https://scotch.io/@deityhub/getting-started-with-the-mern-stack
+
 that's it.
