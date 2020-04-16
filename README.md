@@ -28,4 +28,8 @@ $ heroku list
 $ heroku maintenance:on -a passport-login-eisson
 ```
 
+> API was deployed to heroku:
+* https://nodejs-restful-api-2020.herokuapp.com/api/photos
+* https://nodejs-restful-api-2020.herokuapp.com/api/users
+
 that's it.
